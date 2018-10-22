@@ -1,0 +1,22 @@
+{
+  "name": "webstandards",
+  "version": "1.0.0",
+  "description": "My playground and starter-project for experimenting with the latest web-standards like Webcomponents and Shadow-DOM.",
+  "main": "main.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/38leinaD/webstandards.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/38leinaD/webstandards/issues"
+  },
+  "homepage": "https://github.com/38leinaD/webstandards#readme",
+  "devDependencies": {
+    "cypress": "^3.1.0"
+  }
+}
