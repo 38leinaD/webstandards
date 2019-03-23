@@ -1,5 +1,8 @@
 import { html, LitElement } from 'https://unpkg.com/@polymer/lit-element@latest/lit-element.js?module';
 
+// does not work; reference to lit-html is still absolute
+//import { html, LitElement } from 'lit-element/lit-element.js';
+
 export default class AHello extends LitElement {
 
     static get properties() {
@@ -25,7 +28,7 @@ export default class AHello extends LitElement {
     }
 
     render() {
-        return /*html*/html`
+        return html`
             ${this.style()}
             <div>A minimalist example how to use LitElement. Type your name and press Enter.</div>
             <input type='text' class="input" placeholder="Your name" @keydown='${this.onKeyDown}'/>

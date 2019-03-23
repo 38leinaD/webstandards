@@ -4,7 +4,14 @@
   "description": "My playground and starter-project for experimenting with the latest web-standards like Webcomponents and Shadow-DOM.",
   "main": "main.js",
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "dev-webpack": "webpack-dev-server --open",
+    "dev-owc": "owc-dev-server --open src",
+    "dev-owc-watch": "owc-dev-server | npm run watch",
+    "watch": "browser-sync start -f src/ --proxy localhost:8080 --startPath src",
+    "dev-polymer": "polymer serve --open --open-path src/index.html",
+    "watch-for-polymer": "browser-sync start -f src/ --proxy localhost:8000 --startPath src",
+    "dev-polymer-watch": "polymer serve --open-path src/index.html | npm run watch-for-polymer"
   },
   "repository": {
     "type": "git",
@@ -17,6 +24,16 @@
   },
   "homepage": "https://github.com/38leinaD/webstandards#readme",
   "devDependencies": {
-    "cypress": "^3.1.0"
+    "browser-sync": "^2.26.3",
+    "copy-webpack-plugin": "^5.0.2",
+    "cypress": "^3.1.0",
+    "owc-dev-server": "^0.2.2",
+    "polymer-cli": "^1.9.7",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "lit-element": "^2.1.0"
   }
 }
