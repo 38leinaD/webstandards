@@ -15,10 +15,12 @@ main {
 
 header {
     grid-area: header;
+    background-color: lightpink;
 }
 
 nav {
     grid-area: nav;
+    background-color: lightgreen;
 }
 
 article {
